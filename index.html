@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Burger AR Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 </head>
-<body style="margin: 0;">
+<body style="margin: 0; background-color: white;">
+
     <model-viewer 
         src="burger glb (1).glb" 
         ar 
         ar-modes="webxr scene-viewer quick-look" 
         camera-controls 
         auto-rotate 
-        style="width: 100%; height: 100vh;">
-        <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1px solid #ccc; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); padding: 12px; font-weight: bold;">
-            টেবিলে বার্গার দেখুন (AR)
+        style="width: 100%; height: 100vh;"
+        camera-orbit="0deg 75deg 250%"
+        alt="3D Burger">
+        
+        <button slot="ar-button" style="background-color: #FF0000; color: white; border-radius: 15px; border: 5px solid #ffffff; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); padding: 30px 60px; font-weight: bold; font-size: 26px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); z-index: 9999;">
+            টেবিলে দেখুন (AR)
         </button>
+        
     </model-viewer>
+
 </body>
-      </html>
-      
+        </html>
+
